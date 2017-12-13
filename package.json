@@ -1,0 +1,16 @@
+{
+  "name": "restaurant_backend",
+  "version": "1.0.0",
+  "description": "A backend for react restaurant template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "^4.13.7"
+  },
+  "author": "Ian J. Lewis",
+  "license": "ISC"
+}
