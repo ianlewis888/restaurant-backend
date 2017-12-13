@@ -1,8 +1,4 @@
-import * as brunchImage from '../images/menu-images/brunch.jpeg';
-import * as lunchImage from '../images/menu-images/lunch.jpg';
-import * as dinnerImage from '../images/menu-images/dinner.jpeg';
-
-const data = {
+var data = module.exports = {
   "blockquote": {
     "quote": "Chef Lado Dennis serves an inventive and highly-personal eclectic style of cuisine. Paragon walks a line between sophisticated and casual — no tablecloths here, and it’s the sort of space that can cover a glass of wine and a small bite just as well as a full meal.",
     "citation": "Eater NY"
@@ -13,19 +9,19 @@ const data = {
         "menu": "brunch",
         "name": "fried egg with wild mushrooms and grits",
         "description": "fried egg, asiago cheese grits, shitakes, oyster mushrooms, and chantrelles, paired with a rich spiced tomato sauce",
-        "image": brunchImage
+        "image": 'brunchImage'
       },
       "lunch": {
         "menu": "lunch",
         "name": "egg, frisée, and caramelized onion sandwich",
         "description": "slightly runny egg yolk creates a rich, delicious sauce as it mingles with our homemade fig jam",
-        "image": lunchImage
+        "image": "lunchImage"
       },
       "dinner": {
         "menu": "dinner",
         "name": "hangar steak with rustic balsamic reduction",
         "description": "paired with a crispy truffle baked potato, wild mushrooms, and smashed avocado",
-        "image": dinnerImage
+        "image": "dinnerImage"
       }
     },
     "brunch": [
@@ -444,4 +440,3 @@ const data = {
     "openTableId": null
   }
 };
-export default data;

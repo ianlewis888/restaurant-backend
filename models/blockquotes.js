@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 // Blockquote schema
 var blockquotesSchema = module.exports = new mongoose.Schema({
-  quote: {
+  name: {
     type: String,
     required: true
   },
