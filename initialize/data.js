@@ -1,30 +1,42 @@
 var data = module.exports = {
-  "blockquote": {
+  "blockquotes": [{
     "quote": "Chef Lado Dennis serves an inventive and highly-personal eclectic style of cuisine. Paragon walks a line between sophisticated and casual — no tablecloths here, and it’s the sort of space that can cover a glass of wine and a small bite just as well as a full meal.",
     "citation": "Eater NY"
-  },
+  }],
   "menus": {
-    "featured": {
-      "brunch": {
-        "menu": "brunch",
-        "name": "fried egg with wild mushrooms and grits",
-        "description": "fried egg, asiago cheese grits, shitakes, oyster mushrooms, and chantrelles, paired with a rich spiced tomato sauce",
-        "image": 'brunchImage'
+    "featuredMenu": [
+      {
+        "name": "brunch",
+        "items": [
+          {
+          "name": "fried egg with wild mushrooms and grits",
+          "description": "fried egg, asiago cheese grits, shitakes, oyster mushrooms, and chantrelles, paired with a rich spiced tomato sauce",
+          "image": 'brunchImage'
+          }
+        ]
       },
-      "lunch": {
-        "menu": "lunch",
-        "name": "egg, frisée, and caramelized onion sandwich",
-        "description": "slightly runny egg yolk creates a rich, delicious sauce as it mingles with our homemade fig jam",
-        "image": "lunchImage"
+      {
+        "name": "lunch",
+        "items": [
+          {
+            "name": "egg, frisée, and caramelized onion sandwich",
+            "description": "slightly runny egg yolk creates a rich, delicious sauce as it mingles with our homemade fig jam",
+            "image": "lunchImage"
+          }
+        ]
       },
-      "dinner": {
-        "menu": "dinner",
-        "name": "hangar steak with rustic balsamic reduction",
-        "description": "paired with a crispy truffle baked potato, wild mushrooms, and smashed avocado",
-        "image": "dinnerImage"
+      {
+        "name": "dinner",
+        "items":[
+          {
+            "name": "hangar steak with rustic balsamic reduction",
+            "description": "paired with a crispy truffle baked potato, wild mushrooms, and smashed avocado",
+            "image": "dinnerImage"
+          }
+        ]
       }
-    },
-    "brunch": [
+    ],
+    "brunchMenu": [
       {
         "name": "starters",
         "items": [
@@ -149,7 +161,7 @@ var data = module.exports = {
         ]
       }
     ],
-    "lunch": [
+    "lunchMenu": [
       {
         "name": "starters",
         "items": [
@@ -232,7 +244,7 @@ var data = module.exports = {
         ]
       }
     ],
-    "dinner": [
+    "dinnerMenu": [
       {
         "name": "starters",
         "items": [
@@ -426,14 +438,20 @@ var data = module.exports = {
       {"open": "8AM", "close": "12AM"}
     ]
   },
-  "contact": {
-    "phone": {
-      "countryCode":"1",
-      "areaCode": "555",
-      "localNumber": "876-9846"
+  "contact": [
+    {
+      "method": "phone",
+      "value": {
+        "countryCode":"1",
+        "areaCode": "555",
+        "localNumber": "876-9846"
+      }
     },
-    "email": "hello@paragon.com"
-  },
+    {
+      "method": "email",
+      "value": "hello@paragon.com"
+    }
+  ],
   "externalServices": {
     "yelpId": null,
     "seamlessId": null,
