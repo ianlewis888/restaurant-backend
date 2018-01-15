@@ -12,6 +12,7 @@ var ContactInfo = require('./models/contact_info');
 var blockquotesCollection = db.collection("blockquotes");
 var contactInfoCollection = db.collection("contactInfo");
 var menuItemsCollection = db.collection("menuItems");
+var hoursCollection = db.collection("hours");
 
 // Enable CORS
 app.use(function(req, res, next) {
@@ -34,7 +35,10 @@ app.get('/api/all', function(req, res) {
       responseData["contactInfo"] = contactData;
       return findAll(blockquotesCollection).then(function(blockquotesData) {
         responseData["blockquotes"] = blockquotesData;
-        res.json(responseData);
+        return findAll(hoursCollection).then(function(hoursData) {
+          responseData["hours"] = hoursData;
+          res.json(responseData);
+        });
       });
     });
   }).catch(function(err) {

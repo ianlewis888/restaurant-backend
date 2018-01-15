@@ -418,26 +418,155 @@ var data = module.exports = {
       "notes": null
     }
   },
-  "hours": {
-    "bar": [
-      {"open": "11AM", "close": "12AM"},
-      {"open": "11AM", "close": "12AM"},
-      {"open": "11AM", "close": "12AM"},
-      {"open": "11AM", "close": "12AM"},
-      {"open": "11AM", "close": "2AM"},
-      {"open": "11AM", "close": "2AM"},
-      {"open": "11AM", "close": "2AM"}
-    ],
-    "restaurant": [
-      {"open": "8AM", "close": "10PM"},
-      {"open": "12PM", "close": "10PM"},
-      {"open": "12PM", "close": "10PM"},
-      {"open": "12PM", "close": "10PM"},
-      {"open": "12PM", "close": "12AM"},
-      {"open": "12PM", "close": "12AM"},
-      {"open": "8AM", "close": "12AM"}
-    ]
-  },
+  "hours": [
+    {
+      "day": "sunday",
+      "index": 0,
+      "hours": [
+        {
+          "menu": "brunch",
+          "start": "9 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "10 PM"
+        },
+        {
+          "menu": "bar",
+          "start": "9 AM",
+          "end": "10 PM"
+        }
+      ]
+    },
+    {
+      "day": "monday",
+      "index": 1,
+      "hours": [
+        {
+          "menu": "lunch",
+          "start": "11 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "10 PM"
+        },
+        {
+          "menu": "bar",
+          "start": "11 AM",
+          "end": "10 PM"
+        }
+      ]
+    },
+    {
+      "day": "tuesday",
+      "index": 2,
+      "hours": [
+        {
+          "menu": "lunch",
+          "start": "11 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "10 PM"
+        },
+        {
+          "menu": "bar",
+          "start": "11 AM",
+          "end": "10 PM"
+        }
+      ]
+    },
+    {
+      "day": "wednesday",
+      "index": 3,
+      "hours": [
+        {
+          "menu": "lunch",
+          "start": "11 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "10 PM"
+        },
+        {
+          "menu": "bar",
+          "start": "11 AM",
+          "end": "10 PM"
+        }
+      ]
+    },
+    {
+      "day": "thursday",
+      "index": 4,
+      "hours": [
+        {
+          "menu": "lunch",
+          "start": "11 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "12 AM"
+        },
+        {
+          "menu": "bar",
+          "start": "11 AM",
+          "end": "12 AM"
+        }
+      ]
+    },
+    {
+      "day": "friday",
+      "index": 5,
+      "hours": [
+        {
+          "menu": "lunch",
+          "start": "11 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "12 AM"
+        },
+        {
+          "menu": "bar",
+          "start": "11 AM",
+          "end": "2 AM"
+        }
+      ]
+    },
+    {
+      "day": "saturday",
+      "index": 6,
+      "hours": [
+        {
+          "menu": "brunch",
+          "start": "9 AM",
+          "end": "4:30 PM"
+        },
+        {
+          "menu": "dinner",
+          "start": "4:30 PM",
+          "end": "12 AM"
+        },
+        {
+          "menu": "bar",
+          "start": "9 AM",
+          "end": "2 AM"
+        }
+      ]
+    }
+  ],
   "contact": [
     {
       "method": "phone",

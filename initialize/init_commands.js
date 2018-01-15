@@ -25,9 +25,9 @@ function createMenuItems() {
     if (err) throw err;
   });
 
-  for (var key in menus) {
-    var menuItemCollection = db.collection("menuItems");
+  var menuItemCollection = db.collection("menuItems");
 
+  for (var key in menus) {
     menus[key].forEach(function(menu) {
       var menuName = key;
       var section = menu.name;
@@ -43,5 +43,21 @@ function createMenuItems() {
   }
 }
 
+// Create hours collection
+function createHours() {
+  var hours = data.hours;
+  db.createCollection("hours", function(err, collection) {
+    if (err) throw err;
+  });
+
+  var hoursCollection = db.collection("hours");
+
+  hours.forEach(function(day) {
+    hoursCollection.insert(day);
+    console.log("Inserted day:", day);
+  });
+}
+
 module.exports.createContact = createContact;
 module.exports.createMenuItems = createMenuItems;
+module.exports.createHours = createHours;
